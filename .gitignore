@@ -1,0 +1,10 @@
+.obsidian/
+
+# Keep original Obsidian notes local; publish the rewritten site in docs/.
+欢迎.md
+参数估计方法/
+异常值处理方法/
+神经网络/
+
+# MkDocs build output.
+site/

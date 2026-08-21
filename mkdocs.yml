@@ -1,0 +1,63 @@
+site_name: 机器学习知识库
+site_description: 面向知识分享的机器学习笔记站
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.tracking
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.superfences
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+nav:
+  - 首页: index.md
+  - 参数估计方法:
+      - 概览: 参数估计方法/index.md
+      - EM算法: 参数估计方法/19_参数估计方法-EM算法.md
+      - 贝叶斯估计: 参数估计方法/19_参数估计方法-贝叶斯估计.md
+      - 最大似然估计: 参数估计方法/19_参数估计方法-最大似然估计.md
+      - 最小二乘估计: 参数估计方法/19_参数估计方法-最小二乘估计.md
+      - 最小化均方误差: 参数估计方法/19_参数估计方法-最小化均方误差.md
+  - 异常值处理方法:
+      - 概览: 异常值处理方法/index.md
+      - IQR（四分位距）法: 异常值处理方法/20_异常值处理方法-IQR（四分位距）法.md
+      - Z-Score 标准化: 异常值处理方法/20_异常值处理方法-Z-Score 标准化.md
+      - 标准差法: 异常值处理方法/20_异常值处理方法-标准差法.md
+      - 分箱法处理: 异常值处理方法/20_异常值处理方法-分箱法处理.md
+      - 剪尾法: 异常值处理方法/20_异常值处理方法-剪尾法.md
+      - 聚类法: 异常值处理方法/20_异常值处理方法-聚类法.md
+      - 均值填充: 异常值处理方法/20_异常值处理方法-均值填充.md
+      - 箱线图分析: 异常值处理方法/20_异常值处理方法-箱线图分析.md
+      - 中位数填充: 异常值处理方法/20_异常值处理方法-中位数填充.md
+  - 神经网络:
+      - 概览: 神经网络/index.md
+      - AlexNet: 神经网络/21_神经网络-AlexNet.md
+      - CNN: 神经网络/21_神经网络-CNN.md
+      - DenseNet: 神经网络/21_神经网络-DenseNet.md
+      - GRU (门控循环单元): 神经网络/21_神经网络-GRU (门控循环单元).md
+      - LSTM: 神经网络/21_神经网络-LSTM.md
+      - ResNet: 神经网络/21_神经网络-残差网络（ResNet）.md
+      - RNN: 神经网络/21_神经网络-RNN.md
+      - Transformer: 神经网络/21_神经网络-Transformer.md
+      - 多层感知机: 神经网络/21_神经网络-多层感知机.md
+      - 感知机: 神经网络/21_神经网络-感知机.md
+      - 人工神经网络 ANN: 神经网络/21_神经网络-人工神经网络 ANN.md
+      - 生成对抗网络 GAN: 神经网络/21_神经网络-生成对抗网络 GAN.md
+      - 注意力机制: 神经网络/21_神经网络-注意力机制.md
+      - 自编码器: 神经网络/21_神经网络-自编码器.md
