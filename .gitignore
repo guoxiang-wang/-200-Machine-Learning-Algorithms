@@ -1,10 +1,17 @@
 /.obsidian/
 
-# Keep original Obsidian notes local; publish the rewritten site in docs/.
+# Keep the Obsidian vault local. Only the curated pages under docs/ are published.
 /欢迎.md
 /参数估计方法/
 /异常值处理方法/
 /神经网络/
+/[0-9]*/
+/2026-??-??.md
 
 # MkDocs build output.
 site/
+
+# Local Python tooling.
+.venv/
+__pycache__/
+*.py[cod]

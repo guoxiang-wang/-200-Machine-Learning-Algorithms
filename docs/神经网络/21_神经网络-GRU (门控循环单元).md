@@ -316,7 +316,7 @@ class OptimizedGRUModel(nn.Module):
 # 可替换模型后重新训练以优化效果
 ```
 
-![027_2.png](图片和附件/027_2.png)
+![027_2.png](../assets/神经网络/图片和附件/027_2.png)
 
 1. **训练曲线分析**：
 

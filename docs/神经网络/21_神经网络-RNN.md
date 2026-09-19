@@ -192,7 +192,7 @@ X, y = create_dataset(scaled_data, time_step)
 X = X.reshape((X.shape[0], X.shape[1], 1))
 ```
 
-![024_1.png](图片和附件/024_1.png)
+![024_1.png](../assets/神经网络/图片和附件/024_1.png)
 
 ### 2. 模型构建
 
@@ -309,9 +309,9 @@ plt.legend()
 plt.show()
 ```
 
-![024_2.png](图片和附件/024_2.png)
+![024_2.png](../assets/神经网络/图片和附件/024_2.png)
 
-![024_3.png](图片和附件/024_3.png)
+![024_3.png](../assets/神经网络/图片和附件/024_3.png)
 
 ## 应用场景
 

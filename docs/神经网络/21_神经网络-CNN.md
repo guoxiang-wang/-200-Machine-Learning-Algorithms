@@ -215,7 +215,7 @@ for i in range(25):
 plt.show()
 ```
 
-![023_1.png](图片和附件/023_1.png)
+![023_1.png](../assets/神经网络/图片和附件/023_1.png)
 
 **3. 构建CNN模型**
 
@@ -258,7 +258,7 @@ test_loss, test_acc = model.evaluate(x_test, y_test, verbose=2)
 print(f"Test Accuracy: {test_acc}")
 ```
 
-![023_2.png](图片和附件/023_2.png)
+![023_2.png](../assets/神经网络/图片和附件/023_2.png)
 
 **6. 优化模型**
 
@@ -314,7 +314,7 @@ optimized_test_loss, optimized_test_acc = optimized_model.evaluate(x_test, y_tes
 print(f"Optimized Test Accuracy: {optimized_test_acc}")
 ```
 
-![023_3.png](图片和附件/023_3.png)
+![023_3.png](../assets/神经网络/图片和附件/023_3.png)
 
 代码中，大家可以看到训练和验证准确率的变化，并通过优化模型提升性能。数据增强、增加卷积层数和调整神经网络结构是常见的优化方法。
 

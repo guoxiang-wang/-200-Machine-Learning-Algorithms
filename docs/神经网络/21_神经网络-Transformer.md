@@ -319,13 +319,13 @@ print(f"Final Validation MSE: {val_losses[-1]:.4f}")
 
 - **Early Stopping**（可选）：若验证损失长时间未下降，可提前停止训练。
 
-![22_神经网络-Transformer-1.png](图片和附件/22_神经网络-Transformer-1.png)
+![22_神经网络-Transformer-1.png](../assets/神经网络/图片和附件/22_神经网络-Transformer-1.png)
 
 - 训练曲线（magenta）和验证曲线（cyan）在大多数 epoch 均向下，说明模型在不断学习。
 
 - 最后两者趋于平滑，验证损失未大幅上升，说明未严重过拟合。
 
-![22_神经网络-Transformer-2.png](图片和附件/22_神经网络-Transformer-2.png)
+![22_神经网络-Transformer-2.png](../assets/神经网络/图片和附件/22_神经网络-Transformer-2.png)
 
 - 对比真实值（实线）与预测值（虚线），前 100 个时刻模型能较好地捕捉正弦波形的趋势和噪声分布。
 

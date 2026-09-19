@@ -339,11 +339,11 @@ plt.show()
 
 - **Loss 曲线**：帮助判断模型是否过拟合（如训练损失下降但验证损失上升）
 
-![21_神经网络-DenseNet-1.png](图片和附件/21_神经网络-DenseNet-1.png)
+![21_神经网络-DenseNet-1.png](../assets/神经网络/图片和附件/21_神经网络-DenseNet-1.png)
 
 - **Accuracy 曲线**：显示模型泛化能力，平稳上升说明模型逐步学到特征
 
-![21_神经网络-DenseNet-2.png](图片和附件/21_神经网络-DenseNet-2.png)
+![21_神经网络-DenseNet-2.png](../assets/神经网络/图片和附件/21_神经网络-DenseNet-2.png)
 
 **混淆矩阵**：
 
@@ -377,7 +377,7 @@ plot_confusion_matrix(model, test_loader)
 
 - 可帮助发现样本不均衡或特征不明显的类
 
-![21_神经网络-DenseNet-3.png](图片和附件/21_神经网络-DenseNet-3.png)
+![21_神经网络-DenseNet-3.png](../assets/神经网络/图片和附件/21_神经网络-DenseNet-3.png)
 
 #### 5. 模型性能评估
 

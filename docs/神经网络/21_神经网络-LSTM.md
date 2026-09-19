@@ -171,7 +171,7 @@ plt.ylabel('Closing Price')
 plt.show()
 ```
 
-![025_1.png](图片和附件/025_1.png)
+![025_1.png](../assets/神经网络/图片和附件/025_1.png)
 
 ### 数据预处理
 
@@ -267,7 +267,7 @@ plt.legend()
 plt.show()
 ```
 
-![025_2.png](图片和附件/025_2.png)
+![025_2.png](../assets/神经网络/图片和附件/025_2.png)
 
 ```Python
 # 绘制训练 & 验证损失
@@ -281,7 +281,7 @@ plt.legend()
 plt.show()
 ```
 
-![025_3.png](图片和附件/025_3.png)
+![025_3.png](../assets/神经网络/图片和附件/025_3.png)
 
 ### 算法优化
 

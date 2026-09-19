@@ -291,7 +291,7 @@ plt.title('Accuracy over epochs')
 plt.show()
 ```
 
-![022_1.png](图片和附件/022_1.png)
+![022_1.png](../assets/神经网络/图片和附件/022_1.png)
 
 **5. 模型优化**
 
