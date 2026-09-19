@@ -1,0 +1,83 @@
+:root {
+  --md-primary-fg-color: #334155;
+  --md-accent-fg-color: #ea580c;
+}
+
+.md-typeset h1 {
+  font-weight: 720;
+  letter-spacing: -0.02em;
+}
+
+.md-typeset h2 {
+  margin-top: 2.1em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-nav__link--active {
+  color: var(--md-accent-fg-color) !important;
+  font-weight: 650;
+}
+
+.md-typeset .md-button {
+  margin: 0.3rem 0.35rem 0.6rem 0;
+  border-radius: 0.55rem;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button:not(.md-button--primary) {
+  color: #e2e8f0;
+  border-color: #64748b;
+}
+
+.mermaid .node .nodeLabel,
+.mermaid .node foreignObject div,
+.mermaid .node foreignObject span,
+.mermaid .node foreignObject p {
+  color: #1f2937 !important;
+}
+
+.mermaid .node .label text,
+.mermaid .node text {
+  fill: #1f2937 !important;
+}
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin: 1.2rem 0 2rem;
+}
+
+.topic-card {
+  display: flex;
+  min-height: 7rem;
+  padding: 1.1rem 1.2rem;
+  flex-direction: column;
+  gap: 0.45rem;
+  color: var(--md-default-fg-color) !important;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.75rem;
+  background: var(--md-default-bg-color);
+  box-shadow: 0 0.15rem 0.5rem rgb(15 23 42 / 5%);
+  transition: border-color 150ms ease, transform 150ms ease;
+}
+
+.topic-card:hover {
+  border-color: var(--md-accent-fg-color);
+  transform: translateY(-2px);
+}
+
+.topic-card strong {
+  font-size: 1.05rem;
+}
+
+.topic-card span {
+  color: var(--md-default-fg-color--light);
+  line-height: 1.65;
+}
+
+@media screen and (max-width: 44.9844em) {
+  .topic-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,63 +1,112 @@
-site_name: 机器学习知识库
-site_description: 面向知识分享的机器学习笔记站
+site_name: 机器学习笔记
+site_description: 从使用场景、公式到代码边界的中文机器学习笔记
+site_url: https://guoxiang-wang.github.io/-200-Machine-Learning-Algorithms/
+repo_url: https://github.com/guoxiang-wang/-200-Machine-Learning-Algorithms
+repo_name: guoxiang-wang/machine-learning-notes
+
 theme:
   name: material
   language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: slate
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: slate
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
   features:
     - navigation.instant
+    - navigation.tabs
     - navigation.sections
-    - navigation.tracking
+    - navigation.indexes
     - navigation.top
+    - navigation.footer
     - search.highlight
-    - search.share
+    - search.suggest
     - content.code.copy
+
 plugins:
-  - search
+  - search:
+      lang: zh
+
 markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
+  - tables
   - toc:
       permalink: true
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_css:
+  - stylesheets/extra.css
+
 extra_javascript:
+  - javascripts/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/mermaid@11/dist/mermaid.min.js
+  - javascripts/mermaid.js
+
+copyright: 学习笔记持续校对中
+
 nav:
   - 首页: index.md
-  - 参数估计方法:
-      - 概览: 参数估计方法/index.md
-      - EM算法: 参数估计方法/19_参数估计方法-EM算法.md
-      - 贝叶斯估计: 参数估计方法/19_参数估计方法-贝叶斯估计.md
-      - 最大似然估计: 参数估计方法/19_参数估计方法-最大似然估计.md
-      - 最小二乘估计: 参数估计方法/19_参数估计方法-最小二乘估计.md
+  - 特征缩放:
+      - 先从这里开始: 归一化方法/index.md
+      - Min-Max 缩放: 归一化方法/min-max.md
+      - Z-score 标准化: 归一化方法/z-score.md
+      - MaxAbs 缩放: 归一化方法/max-abs.md
+      - 稳健缩放: 归一化方法/robust-scaler.md
+      - 对数变换: 归一化方法/log-transform.md
+      - 平方根变换: 归一化方法/sqrt-transform.md
+      - Box-Cox 变换: 归一化方法/box-cox.md
+      - 二值化: 归一化方法/binarization.md
+  - 参数估计:
+      - 阅读顺序: 参数估计方法/index.md
       - 最小化均方误差: 参数估计方法/19_参数估计方法-最小化均方误差.md
-  - 异常值处理方法:
-      - 概览: 异常值处理方法/index.md
-      - IQR（四分位距）法: 异常值处理方法/20_异常值处理方法-IQR（四分位距）法.md
-      - Z-Score 标准化: 异常值处理方法/20_异常值处理方法-Z-Score 标准化.md
-      - 标准差法: 异常值处理方法/20_异常值处理方法-标准差法.md
-      - 分箱法处理: 异常值处理方法/20_异常值处理方法-分箱法处理.md
-      - 剪尾法: 异常值处理方法/20_异常值处理方法-剪尾法.md
-      - 聚类法: 异常值处理方法/20_异常值处理方法-聚类法.md
-      - 均值填充: 异常值处理方法/20_异常值处理方法-均值填充.md
+      - 最小二乘估计: 参数估计方法/19_参数估计方法-最小二乘估计.md
+      - 最大似然估计: 参数估计方法/19_参数估计方法-最大似然估计.md
+      - 贝叶斯估计: 参数估计方法/19_参数估计方法-贝叶斯估计.md
+      - EM 算法: 参数估计方法/19_参数估计方法-EM算法.md
+  - 异常值处理:
+      - 先识别，再处理: 异常值处理方法/index.md
       - 箱线图分析: 异常值处理方法/20_异常值处理方法-箱线图分析.md
+      - IQR（四分位距）法: 异常值处理方法/20_异常值处理方法-IQR（四分位距）法.md
+      - 标准差法: 异常值处理方法/20_异常值处理方法-标准差法.md
+      - Z-score 方法: 异常值处理方法/20_异常值处理方法-Z-Score 标准化.md
+      - 聚类法: 异常值处理方法/20_异常值处理方法-聚类法.md
+      - 剪尾法: 异常值处理方法/20_异常值处理方法-剪尾法.md
+      - 分箱法: 异常值处理方法/20_异常值处理方法-分箱法处理.md
       - 中位数填充: 异常值处理方法/20_异常值处理方法-中位数填充.md
+      - 均值填充: 异常值处理方法/20_异常值处理方法-均值填充.md
   - 神经网络:
-      - 概览: 神经网络/index.md
-      - AlexNet: 神经网络/21_神经网络-AlexNet.md
-      - CNN: 神经网络/21_神经网络-CNN.md
-      - DenseNet: 神经网络/21_神经网络-DenseNet.md
-      - GRU (门控循环单元): 神经网络/21_神经网络-GRU (门控循环单元).md
-      - LSTM: 神经网络/21_神经网络-LSTM.md
-      - ResNet: 神经网络/21_神经网络-残差网络（ResNet）.md
-      - RNN: 神经网络/21_神经网络-RNN.md
-      - Transformer: 神经网络/21_神经网络-Transformer.md
-      - 多层感知机: 神经网络/21_神经网络-多层感知机.md
+      - 阅读路径: 神经网络/index.md
       - 感知机: 神经网络/21_神经网络-感知机.md
+      - 多层感知机: 神经网络/21_神经网络-多层感知机.md
       - 人工神经网络 ANN: 神经网络/21_神经网络-人工神经网络 ANN.md
-      - 生成对抗网络 GAN: 神经网络/21_神经网络-生成对抗网络 GAN.md
+      - CNN: 神经网络/21_神经网络-CNN.md
+      - AlexNet: 神经网络/21_神经网络-AlexNet.md
+      - ResNet: 神经网络/21_神经网络-残差网络（ResNet）.md
+      - DenseNet: 神经网络/21_神经网络-DenseNet.md
+      - RNN: 神经网络/21_神经网络-RNN.md
+      - LSTM: 神经网络/21_神经网络-LSTM.md
+      - GRU: 神经网络/21_神经网络-GRU (门控循环单元).md
       - 注意力机制: 神经网络/21_神经网络-注意力机制.md
+      - Transformer: 神经网络/21_神经网络-Transformer.md
       - 自编码器: 神经网络/21_神经网络-自编码器.md
+      - 生成对抗网络 GAN: 神经网络/21_神经网络-生成对抗网络 GAN.md
