@@ -68,6 +68,8 @@ nav:
   - 首页: index.md
   - 特征缩放:
       - 先从这里开始: 归一化方法/index.md
+      - 数据归一化总览: 归一化方法/overview.md
+      - 数据标准化总览: 归一化方法/standardization.md
       - Min-Max 缩放: 归一化方法/min-max.md
       - Z-score 标准化: 归一化方法/z-score.md
       - MaxAbs 缩放: 归一化方法/max-abs.md

@@ -46,6 +46,11 @@ flowchart TB
 
 ## 📚 逐篇阅读
 
+### 入门与总览
+
+- [数据归一化](overview.md)：完整梳理 Min-Max、Z-score 与最大绝对值缩放，并比较它们对聚类结果的影响
+- [数据标准化](standardization.md)：从零均值、单位方差的目标开始推导 Z-score，并给出完整可视化案例
+
 ### 常用缩放
 
 - [Min-Max 缩放](min-max.md)：需要固定区间时最直观，但容易被极端值拉扯
